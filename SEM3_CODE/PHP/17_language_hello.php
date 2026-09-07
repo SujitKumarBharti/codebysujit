@@ -1,13 +1,13 @@
 <?php
-$language = '';                              // Store selected language
-$message = '';                               // Store greeting message
+$language = '';                                                              // Store selected language
+$message = '';                                                               // Store greeting message
 
-if (isset($_POST['language'])) {             // Check form submitted
-    $language = $_POST['language'];           // Read selected language
-    switch ($language) {                     // Select greeting
-        case 'english': $message = 'Hello'; break; // English greeting
-        case 'hindi': $message = 'Namaste'; break; // Hindi greeting
-        case 'french': $message = 'Bonjour'; break; // French greeting
+if (isset($_POST['language'])) {                                             // Check form submitted
+    $language = $_POST['language'];                                          // Read selected language
+    switch ($language) {                                                     // Select greeting
+        case 'english': $message = 'Hello'; break;                           // English greeting
+        case 'hindi': $message = 'Namaste'; break;                           // Hindi greeting
+        case 'french': $message = 'Bonjour'; break;                          // French greeting
     }
 }
 ?>
